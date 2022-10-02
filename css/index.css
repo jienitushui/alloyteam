@@ -2,6 +2,12 @@ a {
     text-decoration: none;
 }
 
+.btn-default:hover {
+    color: #333333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -20,7 +26,7 @@ a {
     display: inline-block;
     float: left;
     font-size: 28px;
-    padding-top: 15px;
+    /* padding-top: 60px; */
     font-family: Segoe UI Light;
     /* margin-left: 80px; */
 }
@@ -29,6 +35,14 @@ a {
     padding: 0 0 65px 0;
     background: #26282c;
     box-shadow: 0 0 4px rgb(0, 0, 0, 50%);
+}
+
+.header-scrolled .main-nav .nav {
+    margin-top: 60px !important;
+}
+
+.header-scrolled .logo {
+    margin-top: 60px !important;
 }
 
 
@@ -80,7 +94,7 @@ a {
 
 .header .main-nav .nav {
     text-decoration: none;
-    margin-top: 10px;
+    /* margin-top: 60px; */
     /* margin-right: 70px; */
     /* color: ; */
 }
@@ -728,4 +742,15 @@ a {
     position: relative;
     transform: scale(2);
     z-index: 99;
+}
+
+@media screen and (max-width: 991px) {
+    .header-scrolled .logo {
+        margin-top: 0px !important;
+    }
+
+    .navbar-right {
+        background: #26282c;
+        box-shadow: 0 0 4px rgb(0, 0, 0, 50%);
+    }
 }
